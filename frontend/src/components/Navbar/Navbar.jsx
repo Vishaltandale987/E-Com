@@ -16,6 +16,7 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import User_Auth from "./User_Auth";
 
 const Links = [{ url: "", title: "Home" },{url:"cart_page",title:"Cart"}];
 
@@ -72,7 +73,9 @@ function Navbar() {
                 <SunIcon className="icon" />
               )}
             </Button>
-            <Menu></Menu>
+            <Menu>
+              <User_Auth />
+            </Menu>
           </Flex>
         </Flex>
 
